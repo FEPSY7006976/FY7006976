@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chart practice</title>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+
+  <div id="bar_div" style="width:600px; height:300px;"></div>
+  <div id="line_div" style="width:800px; height:400px;"></div>
+  <div id="column_div" style="width:800px; height:400px;"></div>
+
+  <script>
+    google.charts.load('current', { packages: ['corechart'] });
+    google.charts.setOnLoadCallback(drawAll);
+
+    function drawAll() {
+      drawBar();
+      drawLine();
+      drawColumn();
+    }
+
+    // Task 1: bar chart of 2023 populations
+    function drawBar() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'City');
+      data.addColumn('number', 'Population');
+      data.addRows([['London', 9648000], ['Birmingham', 1153900], ['Edinburgh', 554000]]);
+      var options = {
+        title: 'City Populations 2023',
+        hAxis: { title: 'Population' },
+        vAxis: { title: 'City' },
+        colors: ['#3366cc'],
+        legend: 'none'
+      };
+      new google.visualization.BarChart(document.getElementById('bar_div')).draw(data, options);
+    }
+
+    // Task 2: line chart of population trends
+    function drawLine() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Year');
+      data.addColumn('number', 'London');
+      data.addColumn('number', 'Birmingham');
+      data.addColumn('number', 'Edinburgh');
+      data.addRows([
+        [2013, 8414000, 1092200, 495000],
+        [2015, 8661000, 1113000, 507000],
+        [2017, 8916000, 1137100, 519000],
+        [2019, 9177000, 1141800, 531000],
+        [2021, 9426000, 1142500, 543000],
+        [2023, 9648000, 1153900, 554000]
+      ]);
+      var options = {
+        title: 'City Population Trends (2013-2023)',
+        hAxis: { title: 'Year', format: '####' },
+        vAxis: { title: 'Population' },
+        legend: { position: 'bottom' }
+      };
+      new google.visualization.LineChart(document.getElementById('line_div')).draw(data, options);
+    }
+
+    // Task 3: column chart with a different colour per column
+    function drawColumn() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Month');
+      data.addColumn('number', 'Sales (in GBP)');
+      data.addColumn({ type: 'string', role: 'style' });
+      data.addRows([
+        ['January', 25000, 'color: #3366cc'],
+        ['February', 28000, 'color: #dc3912'],
+        ['March', 32000, 'color: #ff9900'],
+        ['April', 27000, 'color: #109618'],
+        ['May', 31000, 'color: #990099'],
+        ['June', 34000, 'color: #0099c6'],
+        ['July', 38000, 'color: #dd4477'],
+        ['August', 36000, 'color: #66aa00'],
+        ['September', 31000, 'color: #b82e2e'],
+        ['October', 29000, 'color: #316395'],
+        ['November', 27000, 'color: #994499'],
+        ['December', 32000, 'color: #22aa99']
+      ]);
+      var options = {
+        title: 'Monthly Sales in 2023',
+        hAxis: { title: 'Month' },
+        vAxis: { title: 'Sales (in GBP)' },
+        legend: 'none'
+      };
+      new google.visualization.ColumnChart(document.getElementById('column_div')).draw(data, options);
+    }
+  </script>
+
+</body>
+</html>
