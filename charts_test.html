@@ -20,7 +20,7 @@
       drawColumn();
     }
 
-    // Task 1: bar chart of 2023 populations
+    
     function drawBar() {
       var data = new google.visualization.DataTable();
       data.addColumn('string', 'City');
@@ -36,7 +36,6 @@
       new google.visualization.BarChart(document.getElementById('bar_div')).draw(data, options);
     }
 
-    // Task 2: line chart of population trends
     function drawLine() {
       var data = new google.visualization.DataTable();
       data.addColumn('number', 'Year');
@@ -60,7 +59,6 @@
       new google.visualization.LineChart(document.getElementById('line_div')).draw(data, options);
     }
 
-    // Task 3: column chart with a different colour per column
     function drawColumn() {
       var data = new google.visualization.DataTable();
       data.addColumn('string', 'Month');
