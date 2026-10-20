@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head><title>JavaScript practice</title></head>
+<body>
+
+  <button id="colorButton">Click me to change colour</button>
+  <hr>
+  <input type="text" id="textInput" placeholder="Enter text">
+  <button id="alertButton">Show Alert</button>
+  <hr>
+  <button id="generateButton">Generate Random Number</button>
+  <p id="randomNumber"></p>
+
+  <script>
+    // 1. Colour button
+    var colorButton = document.getElementById("colorButton");
+    function changeColor() {
+      var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, "0");
+      colorButton.style.backgroundColor = randomColor;
+    }
+    colorButton.addEventListener("click", changeColor);
+
+    // 2. Alert with typed text
+    var input = document.getElementById("textInput");
+    var alertButton = document.getElementById("alertButton");
+    function showAlert() {
+      alert("You entered: " + input.value);
+    }
+    alertButton.addEventListener("click", showAlert);
+
+    // 3. Random number 1 to 10
+    var generateButton = document.getElementById("generateButton");
+    var paragraph = document.getElementById("randomNumber");
+    function generateRandomNumber() {
+      paragraph.textContent = "Random Number: " + (Math.floor(Math.random() * 10) + 1);
+    }
+    generateButton.addEventListener("click", generateRandomNumber);
+  </script>
+
+</body>
+</html>
