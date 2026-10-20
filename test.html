@@ -12,7 +12,6 @@
   <p id="randomNumber"></p>
 
   <script>
-    // 1. Colour button
     var colorButton = document.getElementById("colorButton");
     function changeColor() {
       var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, "0");
@@ -20,7 +19,6 @@
     }
     colorButton.addEventListener("click", changeColor);
 
-    // 2. Alert with typed text
     var input = document.getElementById("textInput");
     var alertButton = document.getElementById("alertButton");
     function showAlert() {
@@ -28,7 +26,6 @@
     }
     alertButton.addEventListener("click", showAlert);
 
-    // 3. Random number 1 to 10
     var generateButton = document.getElementById("generateButton");
     var paragraph = document.getElementById("randomNumber");
     function generateRandomNumber() {
