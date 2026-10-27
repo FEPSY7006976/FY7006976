@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Conference paper: To what extent does active aerodynamics improve supercar performance?</title>
- 
+
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://www.gstatic.com/charts/loader.js"></script>
- 
+
   <style>
     table { font-family: arial, sans-serif; border-collapse: collapse; width: 30%; }
     td, th { border: 1px solid #dddddd; text-align: left; padding: 8px; }
@@ -18,16 +18,16 @@
     table.data { width: calc(100% - 300px); margin-left: 250px; }
   </style>
 </head>
- 
+
 <body style="background-color:#FFFFFF; margin-left:50px;">
- 
+
   <img src="WebBanner.png" alt="Banner" width="1200" height="300">
   <h1><b>ENG0018 Computer Laboratory 2026/27</b></h1>
   <h2>Student URN: 7006976</h2>
   <hr>
   <h2 style="font-family:calibri;"><b>Conference paper: To what extent does active aerodynamics improve supercar performance?</b></h2>
   <hr>
- 
+
   <!-- Table of contents -->
   <div class="ex1">
   <table>
@@ -39,13 +39,13 @@
   </table>
   </div>
   <hr>
- 
+
   <!-- Abstract (not included in the word count) -->
   <h3 id="Abstract">Abstract</h3>
   <p class="ex1">
 At high speed, air strongly affects how a supercar accelerates, corners and brakes. Wings create downforce, which presses the tyres onto the road, but they also create drag. Active aerodynamics moves wings and flaps while driving to avoid this compromise. This article examines to what extent the technology improves supercar performance, using two peer-reviewed simulation studies and the production Lamborghini Huracán Performante. The simulations suggest that rotating flaps can cut a wing's drag by about 78%, and that a rear wing set to maximum drag can shorten braking distance by 2% while recovering up to 37% more energy in a hybrid sports car. However, the production car's record lap also relied on lower weight and a stronger engine, and the published figures come from simulations and the manufacturer. Active aerodynamics therefore offers a clear but hard-to-measure improvement.
   </p>
- 
+
   <!-- Introduction and Analysis and discussion are counted by the word count script (Introduction_InText, Analysis_InText) -->
 <div id="Introduction_InText">
 <h3 id="Introduction">Introduction</h3>
@@ -56,30 +56,30 @@ A supercar travelling at 300 km/h is moving through air that pushes on every sur
 Active aerodynamics tries to remove that compromise by using motors to change the angle of a wing or open and close flaps while the car is moving. This article asks to what extent the technology improves supercar performance. It explains how moving wings work, reviews evidence from two simulation studies and a production supercar, and then considers how far that evidence can be trusted.
 </p>
 </div>
- 
+
 <div id="Analysis_InText">
 <h3 id="Analysis">Analysis and discussion</h3>
- 
+
 <h4>How moving wings work</h4>
 <p class="ex1">
 On a straight, the best setting is low drag. In a corner, the best setting is high downforce, and under braking drag itself becomes useful because it helps slow the car. In motorsport, a drag reduction system (DRS) rotates the flaps of a wing, the smaller sections at its rear edge, to cut drag, then returns them when more downforce is needed (Loução, Duarte and Mendes, 2022). The McLaren F1 had a rear spoiler that raised during braking to increase drag and rear downforce (Georgiev et al., 2023).
 </p>
- 
+
 <h4>Evidence from simulation: reducing drag</h4>
 <p class="ex1">
 Loução, Duarte and Mendes (2022) used computational fluid dynamics (CFD), a computer method that predicts how air flows around an object, to study a three-element wing from a Formula Student competition car. With the flaps in their high-downforce position, the wing reached a lift coefficient of 1.160, a measure of downforce, and a drag coefficient of 0.397. Rotating the flaps to the minimum-drag setting reduced the drag coefficient by about 78% but also reduced the lift coefficient by about 53% (Loução, Duarte and Mendes, 2022). Moving flaps can therefore almost remove a wing's drag penalty when downforce is not needed (Table 1, Figure 1).
 </p>
- 
+
 <h4>Evidence from simulation: braking</h4>
 <p class="ex1">
 Georgiev et al. (2023) studied a high-performance hybrid sports car whose rear wing could tilt between a maximum-downforce angle and a maximum-drag angle, where the wing is stalled. Using a computer model, they found that the maximum-drag position gave a 2% shorter stopping distance and up to 37% more recovered energy than a fixed wing when braking from 300 km/h to 50 km/h, because it prevented the anti-lock braking system from intervening (Georgiev et al., 2023). This counter-intuitive result shows that the best wing position depends on what the car is doing.
 </p>
- 
+
 <h4>Evidence from a production supercar</h4>
 <p class="ex1">
 The Lamborghini Huracán Performante was the first Lamborghini to use active aerodynamics, which the company calls Aerodinamica Lamborghini Attiva (ALA) (Top Gear, 2017). At the front, flaps stay closed to give maximum downforce together with the rear wing, and an electric motor opens them to reduce drag (Top Gear, 2017). Lamborghini states that, with its flaps closed, the rear spoiler produces 750% more downforce than the standard Huracán coupe, and the car set a production-car lap record of 6:52.01 at the Nürburgring Nordschleife (Motor Authority, 2016).
 </p>
- 
+
 <h4>How far can the evidence be trusted?</h4>
 <p class="ex1">
 It would be tempting to credit the Performante's record to the wings alone. However, the car is also 40 kg lighter than the standard Huracán and has a substantially developed V10 engine (Top Gear, 2017), so the contribution of active aerodynamics cannot be separated. The 750% figure is a manufacturer claim repeated by journalists, not an independent measurement.
@@ -87,7 +87,7 @@ It would be tempting to credit the Performante's record to the wings alone. Howe
 <p class="ex1">
 The academic evidence has limits too. Both studies are simulations. Georgiev et al. (2023) used two-dimensional wing data and did not include three-dimensional effects or the energy needed to move the wing. CFD also depends on modelling choices. In an aeroengine example, the predicted pressure loss through a turbine vane varied from 1.26% to 1.78% depending on the turbulence model, and turbulence modelling is expected to limit CFD accuracy for the foreseeable future (Chew and Hills, 2009). This example concerns engines, but the point applies to any CFD result. Reliable conclusions would need track or wind-tunnel tests of the same car with the system switched on and off.
 </p>
- 
+
 <p class="ex1"><b>Table 1. Reported effects of active aerodynamics in the sources reviewed</b></p>
 <table class="data">
 <tr>
@@ -111,27 +111,47 @@ The academic evidence has limits too. Both studies are simulations. Georgiev et 
 <td>Manufacturer claims reported by media (Motor Authority, 2016)</td>
 </tr>
 </table>
- 
+
 </div>
 
+<!-- Figure 1 (placeholder chart) sits after the Analysis text and is not part of the word count -->
+<div id="chart_div" class="ex1" style="width:600px; height:400px;"></div>
+<p class="ex1"><b>Figure 1.</b> [Caption and source to be added]</p>
 
-  <!-- Reference -->
-    <h3 id="References">References</h3>
+
+<!-- Conclusion goes here for now it is removed. When you add it back:
+       1. wrap it in <div id="Conclusion_InText"> ... </div>
+       2. add a Conclusion row to the table of contents
+       3. add const conclusionCount = displayWordCount("Conclusion_InText"); to the word count script and add it to the total -->
+
+  <!-- References (not included in the word count) -->
+  <h3 id="References">References</h3>
   <p class="ex1">Surname, A (Year), Title. Publisher.</p>
   <hr>
 
+  <!-- Presentation video (add after you have recorded it and uploaded the .mp4 to GitHub):
+  <video src="ENG0018 Presentation.mp4" width="800" height="450" controls></video>
+  -->
+
+  <div id="last-updated">Loading last update time...</div>
+  <button onclick="verifyLastUpdatedTime()" style="display:block; margin:10px auto; padding:8px 16px;">
+    Verify Last Modified Time
+  </button>
+
+  <p id="totalWordCount"></p>
+  <hr>
 
   <!-- Chart -->
-  <<script>
+  <script>
     google.charts.load('current', { packages: ['corechart'] });
     google.charts.setOnLoadCallback(drawChart);
- 
+
     function drawChart() {
       var data = new google.visualization.DataTable();
       data.addColumn('string', 'Category');
       data.addColumn('number', 'Value');
       data.addRows([['A', 10], ['B', 20], ['C', 15]]);
- 
+
       var options = {
         title: 'title ',
         hAxis: { title: 'Category' },
@@ -139,7 +159,7 @@ The academic evidence has limits too. Both studies are simulations. Georgiev et 
         colors: ['#3366cc'],
         legend: 'none'
       };
- 
+
       new google.visualization.ColumnChart(document.getElementById('chart_div')).draw(data, options);
     }
   </script>
@@ -194,8 +214,7 @@ The academic evidence has limits too. Both studies are simulations. Georgiev et 
     function displayTotalWordCount() {
       const introCount = displayWordCount("Introduction_InText");
       const analysisCount = displayWordCount("Analysis_InText");
-      const conclusionCount = displayWordCount("Conclusion_InText");
-      const total = introCount + analysisCount + conclusionCount;
+      const total = introCount + analysisCount;
       document.getElementById("totalWordCount").innerText = `Total word count: ${total}`;
     }
 
