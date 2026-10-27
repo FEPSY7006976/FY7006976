@@ -14,7 +14,7 @@
     td, th { border: 1px solid #dddddd; text-align: left; padding: 8px; }
     tr:nth-child(even) { background-color: #dddddd; }
     .ex1 { margin-left: 250px; }
-    /* wider table for Table 1 */
+
     table.data { width: calc(100% - 300px); margin-left: 250px; }
   </style>
 </head>
@@ -40,13 +40,12 @@
   </div>
   <hr>
 
-  <!-- Abstract (not included in the word count) -->
+  <!-- Abstract -->
   <h3 id="Abstract">Abstract</h3>
   <p class="ex1">
 At high speed, air strongly affects how a supercar accelerates, corners and brakes. Wings create downforce, which presses the tyres onto the road, but they also create drag. Active aerodynamics moves wings and flaps while driving to avoid this compromise. This article examines to what extent the technology improves supercar performance, using two peer-reviewed simulation studies and the production Lamborghini Huracán Performante. The simulations suggest that rotating flaps can cut a wing's drag by about 78%, and that a rear wing set to maximum drag can shorten braking distance by 2% while recovering up to 37% more energy in a hybrid sports car. However, the production car's record lap also relied on lower weight and a stronger engine, and the published figures come from simulations and the manufacturer. Active aerodynamics therefore offers a clear but hard-to-measure improvement.
   </p>
 
-  <!-- Introduction and Analysis and discussion are counted by the word count script (Introduction_InText, Analysis_InText) -->
 <div id="Introduction_InText">
 <h3 id="Introduction">Introduction</h3>
 <p class="ex1">
@@ -114,25 +113,16 @@ The academic evidence has limits too. Both studies are simulations. Georgiev et 
 
 </div>
 
-<!-- Figure 1 (placeholder chart) sits after the Analysis text and is not part of the word count -->
+
 <div id="chart_div" class="ex1" style="width:600px; height:400px;"></div>
 <p class="ex1"><b>Figure 1.</b> [Caption and source to be added]</p>
 
 
-<!-- Conclusion goes here for now it is removed. When you add it back:
-       1. wrap it in <div id="Conclusion_InText"> ... </div>
-       2. add a Conclusion row to the table of contents
-       3. add const conclusionCount = displayWordCount("Conclusion_InText"); to the word count script and add it to the total -->
-
-  <!-- References (not included in the word count) -->
   <h3 id="References">References</h3>
   <p class="ex1">Surname, A (Year), Title. Publisher.</p>
   <hr>
 
-  <!-- Presentation video (add after you have recorded it and uploaded the .mp4 to GitHub):
-  <video src="ENG0018 Presentation.mp4" width="800" height="450" controls></video>
-  -->
-
+  
   <div id="last-updated">Loading last update time...</div>
   <button onclick="verifyLastUpdatedTime()" style="display:block; margin:10px auto; padding:8px 16px;">
     Verify Last Modified Time
